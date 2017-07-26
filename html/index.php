@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--TheFreeElectron 2015, http://www.instructables.com/member/TheFreeElectron/ -->
+<!--THE LAYMAN'S PI -->
 
 <html>
     <head>
@@ -72,7 +72,7 @@
 	  <input type="number" name="i_actionval" min="1" max="100" id="actionval">
 	  <br><br>
 	  
-	  <input type="submit" value"submit" onclick="return change_pin(port);">
+	  <input type="submit" value"submit" onclick="return send_config();">
 	  <br>
 	</form>  
       </div>

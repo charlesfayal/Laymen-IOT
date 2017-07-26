@@ -1,9 +1,9 @@
 config
   
-Clock 
-6 
+PIR Motion Sensor 
+2 
 LED Matrix 
-4 
-Timer 
-9 
+2 
+Threshold 
+1 
 
