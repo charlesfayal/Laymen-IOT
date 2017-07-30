@@ -22,7 +22,6 @@
 	  
 	  }
 
-
 	  p{
 	  font-size:33px;
 	  text-align:center;
@@ -43,18 +42,14 @@
       <div>
 	<form class='input' name="myForm" tag="forms">
 	  <p> Choose Your Input IO Module</p>
-	  <br>
 	  <input type="radio" name="i_iomodule" value="PIR Motion Sensor" checked> PIR Motion Sensor<br>
 	  <input type="radio" name="i_iomodule" value="Analog Temperature Sensor" >Analog Temperature Sensor<br>
 	  <input type="radio" name="i_iomodule" value="Clock" >Clock<br>
 	  <br>
 	  <p> Select your Input Data Port(s)</p>
 	  <input type="number" name="i_dataport" min="1" max="40" id="port">
-	  <br>
-	  <br>
-	  <br>
+	  <br><br>
 	  <p> Choose  Your Output IO Module </p>
-	  <br>
 	  <input type="radio" name="o_iomodule" value="Relay Switch" checked> Relay Switch<br>
 	  <input type="radio" name="o_iomodule" value="Servo Motor" >Servo Motor<br>
 	  <input type="radio" name="o_iomodule" value="LED Matrix" >LED Matrix
@@ -67,9 +62,19 @@
 	  <p> Select Input's Action </p>
 	  <input type="radio" name="i_action" value="Threshold" checked> Threshold
 	  <input type="radio" name="i_action" value="Timer" >Timer   
-	  <br>
+	  <br><br>
 	  <p> Action Value</p>
 	  <input type="number" name="i_actionval" min="1" max="100" id="actionval">
+	  <br><br>
+	  <p> Action Duration </p>
+	  <input type="number" name="i_actiondur" min="1" max="100" id="actiondur">
+	  <br><br>
+	  <p> Completion </p>
+	  <input type="radio" name="action_finish" value="Terminate" checked> Terminate
+	  <input type="radio" name="action_finish" value="Repeat" >Repeat
+	  <br>
+	  
+	  
 	  <br><br>
 	  
 	  <input type="submit" value"submit" onclick="return send_config();">

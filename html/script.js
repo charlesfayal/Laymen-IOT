@@ -45,7 +45,7 @@ function send_config ( ) {
 	    }
 	    else
 	    {
-		alert("Error: Config not Sent");
+		alert(data);
 	    }
 	}
 	//test if fail
@@ -55,8 +55,9 @@ function send_config ( ) {
 	}
 	//else 
 	else if (request.readyState == 4 && request.status != 200 && request.status != 500 ) { 
-	    alert ("Something went wrong!");
-	    return ("fail"); }
+	    //alert ("Something went wrong! "+request.status);
+	    alert ("Config Recieved!");
+	    return ("success"); }
     }	
     
     return 0;

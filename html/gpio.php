@@ -4,7 +4,7 @@
 //Getting and using values
 
 
-$handle_w = fopen("./pi2.txt","w");
+$handle_w = fopen("./config.pi","w");
 $config = "config" . PHP_EOL;
 
 foreach ($_GET as $key  => $value)
@@ -19,5 +19,8 @@ foreach ($_GET as $key  => $value)
 
 fwrite($handle_w, $config);
 fclose($handle_w);
-echo("success");
+
+exec("./pi config.p i> /dev/null &");
+ 
+//echo("success");
 ?>
