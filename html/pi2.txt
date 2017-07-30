@@ -1,9 +1,0 @@
-config
-  
-PIR Motion Sensor 
-2 
-LED Matrix 
-2 
-Threshold 
-1 
-
